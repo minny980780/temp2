@@ -325,12 +325,10 @@ const CONFIG = {
   //    미디어 파일은 GitHub Pages에 올린 같은 저장소의 폴더를 상대경로로 읽음.
   //    raw.githubusercontent.com 주소는 쓰지 말 것 (재생이 불안정함).
   //    파일명은 영문·숫자·_ 만 쓰는 게 제일 안전함.
-  STIMULUS_TYPE: 'audio',
-  STIMULUS_BASE_URL: 'audio/',
+  STIMULUS_TYPE: 'video',
+  STIMULUS_BASE_URL: 'video/',
   STIMULI: [
-    'sample_01.mp3',
-    'sample_02.mp3',
-    'sample_03.mp3',
+    'McGurk.mp4',
   ],
 
   // ─ 다른 자극으로 바꿀 때는 위 세 줄을 아래처럼 통째로 갈아끼우면 됨 ─
@@ -349,14 +347,11 @@ const CONFIG = {
 
   // ③ 화면 문구 ─ {n}은 자극 개수로 바뀜
   STUDY: {
-    label: '영어학 청취 실험',
-    title: '이 목소리는 어떻게 들리나요?',
-    subtitle: '짧은 음성을 하나씩 듣고 몇 가지 질문에 답하는 실험입니다. 약 10분 걸립니다.',
+    label: 'McGurk effect',
+    title: 'McGurk effect 체험해보자!',
+    subtitle: '영상을 보고 질문에 답하세요.',
     instructions: [
-      '자극 {n}개를 하나씩 보게 됩니다.',
-      '각 자극을 확인한 뒤 질문에 답해 주세요.',
-      '중간에 쉬고 싶으면 창을 닫으세요. 같은 ID로 다시 들어오면 이어서 할 수 있어요.',
-      '정답은 없습니다. 첫인상대로 답해 주세요.',
+      '정답은 없습니다. 바로 답해 주세요.',
     ],
     note: '🎧 가능하면 이어폰이나 헤드폰을 끼고, 조용한 곳에서 참여해 주세요.',
     completeText: '모든 응답이 저장되었습니다. 이제 창을 닫으셔도 됩니다.',
